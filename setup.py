@@ -49,10 +49,14 @@ setup(name='OpenEXR',
                             '/opt/local/include/OpenEXR',
                             '/usr/include/Imath',
                             '/usr/local/include/Imath',
-                            '/opt/local/include/Imath'],
+                            '/opt/local/include/Imath',
+                            '/opt/homebrew/Cellar/openexr/3.1.7/include/OpenEXR', # brew install path
+                            '/opt/homebrew/Cellar/imath/3.1.7/include/Imath'], # brew install path
               library_dirs=['/usr/lib',
                             '/usr/local/lib',
-                            '/opt/local/lib'],
+                            '/opt/local/lib',
+                            '/opt/homebrew/Cellar/openexr/3.1.7/lib', # brew install path
+                            '/opt/homebrew/Cellar/imath/3.1.7/lib'], # brew install path
               libraries=libraries,
               extra_compile_args=extra_compile_args)
   ],
